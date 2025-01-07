@@ -9,17 +9,17 @@ xys = rot90([x(:),y(:)]);
 dsXys = rot90([dsX(:),dsY(:)]);
 
 % Apply interpolation scheme to variable
-fnSpline = tpaps(xys,rot90(var(:)));
+fnSpline = tpaps(xys,rot90(var(:)),1);
 varInt = fnval(fnSpline,dsXys);
 varInt = varInt(:);
 varInt = reshape(varInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(z(:)));
+fnSpline = tpaps(xys,rot90(z(:)),1);
 zInt = fnval(fnSpline,dsXys);
 zInt = zInt(:);
 zInt = reshape(zInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(varMean(:)));
+fnSpline = tpaps(xys,rot90(varMean(:)),1);
 varMeanInt = fnval(fnSpline,dsXys);
 varMeanInt = varMeanInt(:);
 varMeanInt = reshape(varMeanInt,size(dsX));

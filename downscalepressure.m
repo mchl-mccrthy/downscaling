@@ -7,17 +7,17 @@ function dsP = downscalepressure(x,y,z,P,T,dsX,dsY,dsZ,dsT)
 xys = rot90([x(:),y(:)]);
 dsXys = rot90([dsX(:),dsY(:)]);
 
-fnSpline = tpaps(xys,rot90(z(:)));
+fnSpline = tpaps(xys,rot90(z(:)),1);
 zInt = fnval(fnSpline,dsXys);
 zInt = zInt(:);
 zInt = reshape(zInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(T(:)));
+fnSpline = tpaps(xys,rot90(T(:)),1);
 tInt = fnval(fnSpline,dsXys);
 tInt = tInt(:);
 tInt = reshape(tInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(P(:)));
+fnSpline = tpaps(xys,rot90(P(:)),1);
 pInt = fnval(fnSpline,dsXys);
 pInt = pInt(:);
 pInt = reshape(pInt,size(dsX));

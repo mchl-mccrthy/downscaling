@@ -26,3 +26,23 @@ downscale(foOut,dim,startDate,endDate,tpLr,lats,lons,zs,dateTimes,...
     t2m,tp,ssrd,strd,sp,u10,v10,d2m,dsLats,dsLons,dsZs,demLats,demLons,...
     demZs,demCurv,demSlope,demAspect,nCpus)
 
+% Plot temperature for first time step
+date = startDate;
+datestr = [num2str(year(date),'%02.f') '_'...
+    num2str(month(date),'%02.f') '_' num2str(day(date),'%02.f') ...
+    '_' num2str(hour(date),'%02.f')];
+T = ncread([foOut '/' num2str(year(startDate)) '/t2m/t2m_' datestr ...
+    '.nc'],'t2m');
+figure()
+cLims = linspace(-max(abs(T-273.15),[],'all'),max(abs(T-273.15),[],'all'));
+[xs,ys] = meshgrid(1:size(demZs,2),fliplr(1:size(demZs,1)));
+contourf(xs,ys,T-273.15,cLims,'LineColor','none'); hold on
+c = colorbar;
+c.Label.String = 'Temperature (\circC)';
+colormap(flipud(brewermap(25,'RdBu')))
+clim([cLims(1) cLims(end)])
+axis equal
+xlabel('Easting (km)')
+ylabel('Northing (km)')
+formatfigure(gcf,10,10,4)
+

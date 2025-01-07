@@ -8,17 +8,17 @@ xys = rot90([x(:),y(:)]);
 dsXys = rot90([dsX(:),dsY(:)]);
 
 % Do a simple interpolation of temperature, dewpoint and longwave
-fnSpline = tpaps(xys,rot90(L(:)));
+fnSpline = tpaps(xys,rot90(L(:)),1);
 LInt = fnval(fnSpline,dsXys);
 LInt = LInt(:);
 LInt = reshape(LInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(T(:)));
+fnSpline = tpaps(xys,rot90(T(:)),1);
 TInt = fnval(fnSpline,dsXys);
 TInt = TInt(:);
 TInt = reshape(TInt,size(dsX));
 
-fnSpline = tpaps(xys,rot90(Td(:)));
+fnSpline = tpaps(xys,rot90(Td(:)),1);
 TdInt = fnval(fnSpline,dsXys);
 TdInt = TdInt(:);
 TdInt = reshape(TdInt,size(dsX));

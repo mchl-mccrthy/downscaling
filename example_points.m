@@ -11,7 +11,7 @@ load('Inputs/sample_points.mat')
 foOut = 'Outputs'; % Output folder
 dim = 'points'; % Grid 'grid' or points 'points'
 startDate = datetime(1998,1,1,0,0,0);
-endDate = datetime(1998,1,1,23,0,0);
+endDate = datetime(1998,1,7,23,0,0);
 tpLr = 0; % Lapse rate in mm yr-1 m-1
 n = 1500; % Scaling length for curvature calculation (m)
 nCpus = 1; % Number of CPUs
@@ -26,3 +26,9 @@ downscale(foOut,dim,startDate,endDate,tpLr,lats,lons,zs,dateTimes,...
     t2m,tp,ssrd,strd,sp,u10,v10,d2m,dsLats,dsLons,dsZs,demLats,demLons,...
     demZs,demCurv,demSlope,demAspect,nCpus)
 
+% Plot temperature at first point
+T = readtable([foOut '/point_001.csv']);
+figure()
+plot(T.dateTime,T.t2m-273.15)
+ylabel('Temperature (\circC)')
+formatfigure(gcf,7,3,2)

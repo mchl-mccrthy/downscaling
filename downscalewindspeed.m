@@ -11,11 +11,11 @@ xys = rot90([x(:),y(:)]);
 dsXys = rot90([dsX(:),dsY(:)]);
 
 % Interpolate u, v, and calculate and interpolate wind speed
-fnSpline = tpaps(xys,rot90(u(:)));
+fnSpline = tpaps(xys,rot90(u(:)),1);
 uInt = fnval(fnSpline,dsXys);
 uInt = uInt(:);
 uInt = reshape(uInt,size(dsX));
-fnSpline = tpaps(xys,rot90(v(:)));
+fnSpline = tpaps(xys,rot90(v(:)),1);
 vInt = fnval(fnSpline,dsXys);
 vInt = vInt(:);
 vInt = reshape(vInt,size(dsX));

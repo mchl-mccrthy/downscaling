@@ -19,7 +19,7 @@ varSe = rot90(varSe(:));
 
 % Apply interpolation scheme to standard elevation variable, to look at
 % spatial variability of variable independent of elevation
-fnSpline = tpaps(xys,varSe);
+fnSpline = tpaps(xys,varSe,1);
 varSeInt = fnval(fnSpline,dsXys);
 varSeInt = varSeInt(:);
 varSeInt = reshape(varSeInt,size(dsX));

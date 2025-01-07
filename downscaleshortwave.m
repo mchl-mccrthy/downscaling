@@ -8,7 +8,7 @@ xys = rot90([x(:),y(:)]);
 dsXys = rot90([dsX(:),dsY(:)]);
 
 % Apply interpolation scheme to variable
-fnSpline = tpaps(xys,rot90(var(:)));
+fnSpline = tpaps(xys,rot90(var(:)),1);
 varInt = fnval(fnSpline,dsXys);
 varInt = varInt(:);
 varInt = reshape(varInt,size(dsX));
