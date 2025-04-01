@@ -21,3 +21,5 @@ Liston, G. E., & Elder, K. (2006). A meteorological distribution system for high
 Machguth, H., Paul, F., Kotlarski, S., & Hoelzle, M. (2009). Calculating distributed glacier mass balance for the Swiss Alps from regional climate model output: A methodical description and interpretation of the results. Journal of Geophysical Research: Atmospheres, 114(D19).
 
 McCarthy, M., Meier, F., Fatichi, S., Stocker, B. D., Shaw, T. E., Miles, E., ... & Pellicciotti, F. (2022). Glacier contributions to river discharge during the current Chilean megadrought. Earth's Future, 10(10), e2022EF002852.
+
+Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically based atmospheric variables downscaling technique. Journal of Hydrometeorology, 21(1), 93-108.
