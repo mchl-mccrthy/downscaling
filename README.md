@@ -8,10 +8,10 @@ Author: Michael McCarthy (michael.mccarthy@wsl.ch)
 The scripts example_grid.m and example_points.m show how to use the toolbox to downscale to a grid or to points, respectively.
 
 ## Input data
-Example input data are provided in the folder /Inputs.
+Inputs from the climate reanalysis include latitude, longitude, elevation, time, air temperature, precipitation, incoming shortwave radiation, incoming longwave radiation, atmospheric pressure, u and v components of wind, and dewpoint temperature. Latitude, longitude and elevation data of the grid or points to which the reanalysis will be downscaled must also be provided. Example input data are provided in the folder /Inputs. 
 
 ## Output data
-Running the example scripts will produce example output data in a folder /Outputs.
+Outputs from the climate reanalysis include air temperature, precipitation, incoming shortwave radiation, incoming longwave radiation, atmospheric pressure, wind speed and relative humidity. Running the example scripts will produce example output data in a folder /Outputs. 
 
 ## References
 Cosgrove, B. A., Lohmann, D., Mitchell, K. E., Houser, P. R., Wood, E. F., Schaake, J. C., ... & Meng, J. (2003). Real‐time and retrospective forcing in the North American Land Data Assimilation System (NLDAS) project. Journal of Geophysical Research: Atmospheres, 108(D22).
