@@ -1,19 +1,8 @@
-# Third-Party Licenses
+Third-party licenses
 
-This repository includes external scripts that are licensed separately from the main repository. Below is a list of these third-party scripts along with their respective licenses.
+This repository includes third-party scripts that are licensed separately from the main repository. Below is a list of these scripts along with their respective licenses. Each third-party script is subject to its own license terms, which are included in /third_party, as shown below. Please ensure compliance with these licenses when using, modifying, or distributing this repository.
 
-## Included Third-Party Scripts
-
-| File(s) | Source / Author | License |
-|---------|---------------|---------|
-| `third_party/function1.py` | [Original Author] | BSD 3-Clause ([LICENSE_function1](third_party/LICENSE_function1)) |
-| `third_party/function2.py` | [Original Author] | MIT ([LICENSE_function2](third_party/LICENSE_function2)) |
-
-## License Details
-
-Each third-party script is subject to its own license terms, which are included in the repository:
-
-- **BSD 3-Clause License** (for `function1.py`): See [`LICENSE_function1`](third_party/LICENSE_function1).
-- **MIT License** (for `function2.py`): See [`LICENSE_function2`](third_party/LICENSE_function2).
-
-Please ensure compliance with these licenses when using, modifying, or distributing this repository.
+File                       | Author                          | License
+third_party/brewermap.m    | Stephen Cobeldick, 2014-2024    | third_party/LICENSE_brewermap.txt (BSD 3-Clause) 
+third_party/inpaint_nans.m | John D'Errico, 2009             | third_party/LICENSE_inpaint_nans.txt (BSD 3-Clause) 
+third_party/circ_mean.m    | Philipp Berens, 2011            | third_party/LICENSE_circ_mean.txt (Apache 2.0) 
