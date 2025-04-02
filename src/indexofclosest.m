@@ -2,7 +2,7 @@
 % query point
 %
 % Michael McCarthy 2024
-function [row,col] = indexofclosest2(xq,yq,x,y)
+function [row,col] = indexofclosest(xq,yq,x,y)
 
 % Get x, y and query x, y into correct format
 xyQ = [xq,yq];
