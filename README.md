@@ -5,7 +5,7 @@ This toolbox implements algorithms with which climate reanalysis data can be sta
 Author: Michael McCarthy (michael.mccarthy@wsl.ch)
 
 ## Using the toolbox
-The scripts [src/example_grid.m](src/example_grid.m) and [src/example_points.m](src/example_points.m) show how to use the toolbox to downscale to a grid or to points, respectively. To run the examples, download the repository and navigate to the example scripts. Paths will be initialised based on the structure of the repository.
+The scripts [src/example_grid.m](src/example_grid.m) and [src/example_points.m](src/example_points.m) show how to use the toolbox to downscale to a grid or to points, respectively. To run the examples, download the repository, open MATLAB, and navigate to the example scripts. Paths will be initialised based on the structure of the repository. Note that the grid example uses the MATLAB Parallel Computing Toolbox and that the toolbox has been tested in MATLAB 2022a.
 
 ## Input data
 Inputs from the climate reanalysis include latitude, longitude, elevation, time, air temperature, precipitation, incoming shortwave radiation, incoming longwave radiation, atmospheric pressure, u and v components of wind, and dewpoint temperature. Latitude, longitude and elevation data of the grid or points to which the reanalysis will be downscaled must also be provided. Example input data are provided in the folder /Inputs. 
