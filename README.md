@@ -27,9 +27,9 @@ Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically b
 ## Third-party dependencies
 This toolbox includes third-party scripts that are licensed under different terms as follows:
 
-[third_party/brewermap.m](third_party/brewermap.m), Stephen Cobeldick, 2014–2024, BSD 3-Clause ([third_party/LICENSE_brewermap.txt](third_party/LICENSE_brewermap.txt))
+Stephen Cobeldick (2014–2024). [third_party/brewermap.m](third_party/brewermap.m), BSD 3-Clause ([third_party/LICENSE_brewermap.txt](third_party/LICENSE_brewermap.txt))
 
-[third_party/inpaint_nans.m](third_party/inpaint_nans.m), John D'Errico, 2009, BSD 3-Clause ([third_party/LICENSE_inpaint_nans.txt](third_party/LICENSE_inpaint_nans.txt))
+John D'Errico (2009). [third_party/inpaint_nans.m](third_party/inpaint_nans.m), BSD 3-Clause ([third_party/LICENSE_inpaint_nans.txt](third_party/LICENSE_inpaint_nans.txt))
 
-[third_party/circ_mean.m](third_party/circ_mean.m), Philipp Berens, 2011, Apache 2.0 ([third_party/LICENSE_circ_mean.txt](third_party/LICENSE_circ_mean.txt))
+Philipp Berens (2011). [third_party/circ_mean.m](third_party/circ_mean.m), Apache 2.0 ([third_party/LICENSE_circ_mean.txt](third_party/LICENSE_circ_mean.txt))
 
