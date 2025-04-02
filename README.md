@@ -25,7 +25,7 @@ McCarthy, M., Meier, F., Fatichi, S., Stocker, B. D., Shaw, T. E., Miles, E., ..
 Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically based atmospheric variables downscaling technique. Journal of Hydrometeorology, 21(1), 93-108.
 
 ## Third-party dependencies
-This toolbox includes third-party scripts that are licensed under different terms as follows:
+This toolbox includes third-party scripts that are licensed under different terms as follows. Please comply with these licenses as discussed [here](/THIRD_PARTY_LICENSES).
 
 Stephen Cobeldick (2014–2024). [third_party/brewermap.m](third_party/brewermap.m), BSD 3-Clause ([third_party/LICENSE_brewermap.txt](third_party/LICENSE_brewermap.txt))
 
