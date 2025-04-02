@@ -15,7 +15,7 @@ load('inputs/reanalysis_data.mat')
 load('inputs/sample_points.mat')
 
 % Specify some options
-foOut = 'outputs'; % Output folder
+foOut = [foParent '/outputs']; % Output folder
 dim = 'points'; % Grid 'grid' or points 'points'
 startDate = datetime(1998,1,1,0,0,0);
 endDate = datetime(1998,1,7,23,0,0);
