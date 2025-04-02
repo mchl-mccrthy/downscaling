@@ -3,12 +3,19 @@
 %
 % Michael McCarthy 2024
 
+% Get parent folder and add paths
+foParent = fileparts(pwd);
+addpath([foParent '/src'])
+addpath([foParent '/third_party'])
+addpath([foParent '/inputs'])
+addpath([foParent '/outputs'])
+
 % Load reanalysis data and sample point(s)
-load('Inputs/reanalysis_data.mat')
-load('Inputs/sample_points.mat')
+load('inputs/reanalysis_data.mat')
+load('inputs/sample_points.mat')
 
 % Specify some options
-foOut = 'Outputs'; % Output folder
+foOut = 'outputs'; % Output folder
 dim = 'points'; % Grid 'grid' or points 'points'
 startDate = datetime(1998,1,1,0,0,0);
 endDate = datetime(1998,1,7,23,0,0);
