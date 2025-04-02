@@ -3,6 +3,13 @@
 %
 % Michael McCarthy 2024
 
+% Get parent folder and add paths
+foParent = fileparts(pwd);
+addpath([foParent '/src'])
+addpath([foParent '/third_party'])
+addpath([foParent '/inputs'])
+addpath([foParent '/outputs'])
+
 % Load reanalysis data and sample grid
 load('Inputs/reanalysis_data.mat')
 load('Inputs/sample_grid.mat')
