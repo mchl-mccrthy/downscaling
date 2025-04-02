@@ -23,3 +23,13 @@ Machguth, H., Paul, F., Kotlarski, S., & Hoelzle, M. (2009). Calculating distrib
 McCarthy, M., Meier, F., Fatichi, S., Stocker, B. D., Shaw, T. E., Miles, E., ... & Pellicciotti, F. (2022). Glacier contributions to river discharge during the current Chilean megadrought. Earth's Future, 10(10), e2022EF002852.
 
 Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically based atmospheric variables downscaling technique. Journal of Hydrometeorology, 21(1), 93-108.
+
+## Third-party dependencies
+This project includes third-party scripts that are licensed under different terms. Below is a list of third-party scripts used in this repository:
+
+third_party/brewermap.m,	Stephen Cobeldick, 2014–2024,	BSD 3-Clause (third_party/LICENSE_brewermap.txt)
+
+third_party/inpaint_nans.m,	John D'Errico, 2009,	BSD 3-Clause (third_party/LICENSE_inpaint_nans.txt)
+
+third_party/circ_mean.m,	Philipp Berens, 2011,	Apache 2.0 (third_party/LICENSE_circ_mean.txt)
+
