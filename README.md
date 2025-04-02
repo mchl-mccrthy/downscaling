@@ -5,7 +5,7 @@ This toolbox implements algorithms with which climate reanalysis data can be sta
 Author: Michael McCarthy (michael.mccarthy@wsl.ch)
 
 ## Using the toolbox
-The scripts example_grid.m and example_points.m show how to use the toolbox to downscale to a grid or to points, respectively.
+The scripts [src/example_grid.m](src/example_grid.m) and [src/example_points.m](src/example_points.m) show how to use the toolbox to downscale to a grid or to points, respectively. To run the examples, download the repository and navigate to the example scripts. Paths will be initialised based on the structure of the repository.
 
 ## Input data
 Inputs from the climate reanalysis include latitude, longitude, elevation, time, air temperature, precipitation, incoming shortwave radiation, incoming longwave radiation, atmospheric pressure, u and v components of wind, and dewpoint temperature. Latitude, longitude and elevation data of the grid or points to which the reanalysis will be downscaled must also be provided. Example input data are provided in the folder /Inputs. 
