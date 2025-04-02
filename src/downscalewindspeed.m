@@ -53,7 +53,7 @@ if strcmp(dim,'points')
     nPts = length(dsX);
     WwTemp = nan(size(dsX));
     for iPt = 1:nPts
-        [row,col] = indexofclosest2(dsX(iPt),dsY(iPt),demX,demY);
+        [row,col] = indexofclosest(dsX(iPt),dsY(iPt),demX,demY);
         WwTemp(iPt) = Ww(row,col);
     end
     Ww = WwTemp;
