@@ -24,7 +24,7 @@ McCarthy, M., Meier, F., Fatichi, S., Stocker, B. D., Shaw, T. E., Miles, E., ..
 
 Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically based atmospheric variables downscaling technique. Journal of Hydrometeorology, 21(1), 93-108.
 
-## Referencing this toolbox
+## Referencing the toolbox
 This toolbox can be referenced e.g., in APA format as follows.
 
 McCarthy, M. (2025). A MATLAB toolbox for statistical downscaling of climate reanalysis data (Version 1.0.0). GitHub. [https://github.com/mchl-mccrthy/downscaling](https://github.com/mchl-mccrthy/downscaling)
