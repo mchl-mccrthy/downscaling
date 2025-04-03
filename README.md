@@ -24,11 +24,6 @@ McCarthy, M., Meier, F., Fatichi, S., Stocker, B. D., Shaw, T. E., Miles, E., ..
 
 Rouf, T., Mei, Y., Maggioni, V., Houser, P., & Noonan, M. (2020). A physically based atmospheric variables downscaling technique. Journal of Hydrometeorology, 21(1), 93-108.
 
-## Referencing the toolbox
-This toolbox can be referenced e.g., in APA format as follows.
-
-McCarthy, M. (2025). A MATLAB toolbox for statistical downscaling of climate reanalysis data (Version 1.0.0). GitHub. [https://github.com/mchl-mccrthy/downscaling](https://github.com/mchl-mccrthy/downscaling)
-
 ## Third-party dependencies
 This toolbox includes third-party dependencies that are licensed under different terms as follows. Please comply with these licenses as discussed [here](/THIRD_PARTY_LICENSES).
 
@@ -37,4 +32,10 @@ Stephen Cobeldick (2014–2024). [third_party/brewermap.m](third_party/brewermap
 John D'Errico (2009). [third_party/inpaint_nans.m](third_party/inpaint_nans.m), BSD 3-Clause ([third_party/LICENSE_inpaint_nans.txt](third_party/LICENSE_inpaint_nans.txt))
 
 Philipp Berens (2011). [third_party/circ_mean.m](third_party/circ_mean.m), Apache 2.0 ([third_party/LICENSE_circ_mean.txt](third_party/LICENSE_circ_mean.txt))
+
+## Referencing the toolbox
+This toolbox can be referenced e.g., in APA format as follows.
+
+McCarthy, M. (2025). A MATLAB toolbox for statistical downscaling of climate reanalysis data (Version 1.0.0). GitHub. [https://github.com/mchl-mccrthy/downscaling](https://github.com/mchl-mccrthy/downscaling)
+
 
