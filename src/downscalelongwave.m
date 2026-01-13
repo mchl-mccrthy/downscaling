@@ -24,8 +24,8 @@ TdInt = TdInt(:);
 TdInt = reshape(TdInt,size(dsX));
 
 % Calculate interpolated and downscaled vapour pressure (hPa)
-eInt = 6.112.*exp(17.27.*(TdInt-273.15)./(237.3+TdInt-273.15));
-dsE = 6.112.*exp(17.27.*(dsTd-273.15)./(237.3+dsTd-273.15));
+eInt = 6.11.*exp(17.27.*(TdInt-273.15)./(237.3+TdInt-273.15));
+dsE = 6.11.*exp(17.27.*(dsTd-273.15)./(237.3+dsTd-273.15));
 
 % Calculate interpolated and downscaled emmisivity
 epsInt = 1.08.*(1-exp(-eInt.^(TInt./2016)));
@@ -40,3 +40,4 @@ sigma = 5.67e-8;
 dsL = dsEps.*sigma./(epsInt.*sigma).*(dsT./TInt).^4.*LInt;
 
 end
+
