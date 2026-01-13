@@ -1,5 +1,8 @@
 % Downscale longwave radiation following Cosgrove et al (2003) 
 %
+% - Temperature and dewpoint temperature must be input in Kelvin
+% - Longwave radiation is input and output in W/m2
+%
 % Michael McCarthy 2023
 function dsL = downscalelongwave(x,y,L,T,Td,dsX,dsY,dsT,dsTd)
 
@@ -23,9 +26,10 @@ TdInt = fnval(fnSpline,dsXys);
 TdInt = TdInt(:);
 TdInt = reshape(TdInt,size(dsX));
 
-% Calculate interpolated and downscaled vapour pressure (hPa)
-eInt = 6.11.*exp(17.27.*(TdInt-273.15)./(237.3+TdInt-273.15));
-dsE = 6.11.*exp(17.27.*(dsTd-273.15)./(237.3+dsTd-273.15));
+% Calculate interpolated and downscaled vapour pressure (hPa) following
+% Shuttleworth (2012)
+eInt = 6.108.*exp(17.27.*(TdInt-273.15)./(237.3+TdInt-273.15));
+dsE = 6.108.*exp(17.27.*(dsTd-273.15)./(237.3+dsTd-273.15));
 
 % Calculate interpolated and downscaled emmisivity
 epsInt = 1.08.*(1-exp(-eInt.^(TInt./2016)));
@@ -40,4 +44,3 @@ sigma = 5.67e-8;
 dsL = dsEps.*sigma./(epsInt.*sigma).*(dsT./TInt).^4.*LInt;
 
 end
-
