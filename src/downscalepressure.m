@@ -22,10 +22,11 @@ pInt = fnval(fnSpline,dsXys);
 pInt = pInt(:);
 pInt = reshape(pInt,size(dsX));
 
-% Get T_m
+% Get T_m (Eqn 4)
 Tm = (dsT+tInt)/2;
 
 % Get downscaled pressure (note a*exp(-b) = a/exp(b))
 dsP = pInt.*exp(-9.81.*(dsZ-zInt)./(287*Tm));
 
 end
+
